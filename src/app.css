@@ -1,0 +1,155 @@
+:root {
+    --white-color: #F5F5F5;
+    --black-color: #181818;
+    --gray-color: #9D9D9D;
+    --yellow-color: #EECC4D;
+    --magenta-color: #E60576;
+    --magenta-trans-color:hsla(330, 96%, 46%, 0.7);
+    --light-blue-color: #C9E2E7;
+    --cyan-color: #2CCCC3;
+
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--white-color);
+    font: inherit;
+    font-family: 'Gilroy'
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-color);
+}
+
+main {
+    /* margin-inline: 5vw;
+    margin-top: 5vh; */
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h1,h2,h3,h4,h5,p {
+    cursor: default;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-color);
+}
+
+.hero-line > p {
+    text-align: end;
+}
+
+.hero-line {
+    position: absolute;
+    width: 90%;
+    bottom: 50px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px){
+
+    h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {background-position: 100% 100%;}
+
+    75% {background-position: 0% 100%;}
+
+    100% {background-position: 0% 0%;}
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("http://45.91.94.21/uploads/Radomir_Tinkov_Gilroy_Regular_904cd7c7ed.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("http://45.91.94.21/uploads/Radomir_Tinkov_Gilroy_Regular_Italic_f0a0e0345a.otf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("http://45.91.94.21/uploads/Radomir_Tinkov_Gilroy_Bold_7c820d8f76.otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("http://45.91.94.21/uploads/Radomir_Tinkov_Gilroy_Bold_Italic_cc6b230203.otf");
+    font-weight: bold;
+    font-style: italic;
+    font-display: block;
+}
+
